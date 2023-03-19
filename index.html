@@ -1,0 +1,386 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Encabezado-->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Diego</a>
+
+            </div>
+
+            <nav id="nav" class="">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#aboutme" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">CONTACT</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img class="img-perfil" src="img/Perfil.png" alt="">
+            </div>
+            <h1>Diego Murillo</h1>
+            <h2>Software Developer - Web Development Expert</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre Mi-->
+    <section id="aboutme" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hola, soy Diego Mrillo.</span> llevo mas de un año en el ambito del desarrollo de software, 
+            tengo conocimiento en creacion de aplicaciones web con las tecnologias como HTML, CSS, Javascript, 
+            siempre me apasionado el mundo de la tecnologia por lo que cada vez sigo en constante aprendizaje </p>
+
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            03-01-1997
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +593 989 511 411
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            murillodiego011@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            url---
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Desarrollador de Aplicaciones Web
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-futbol"></i>
+                            <span>Futbol</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Libros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-podcast"></i>
+                            <span>Podcast</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-motorcycle"></i>
+                            <span>Motos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skills-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node.js</span>
+                        <div class="barra-skill">
+                            <div class="progreso nodejs">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional Skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajoequipo">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso management">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de software - Aplicaciones Web</h4>
+                        <span class="casa">Instituto Tecnologico  Universitario Superior España</span>
+                        <span class="fecha">2020 - 2023</span>
+                        <p>Genera soluciones innovadoras y creativas que permitan gestionar, optimizar el 
+                            desarrollo de aplicaciones Web,
+                             para las diferentes 
+                            actividades que generan contextos a las empresas y facilitan el proceso de business inteligente.</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Desarrollo Web Full-Stack y Ciencias de la Computación</h4>
+                        <span class="casa">Academlo</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Desarrollador Web que Fomenta la gestión de proyectos disponibles que permitan el desarrollo de
+                             aplicaciones web como servicio 
+                            comercial para la mayoría de las empresas con funciones propias a las necesidades básicas.</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                    </div>
+
+                </div>
+
+
+            <div class="col derecha">
+                <h3>Experiencia de Trabajos</h3>
+                <div class="item der">
+                    <h4>Front Developer</h4>
+                    <span class="casa">Academlo</span>
+                    <span class="fecha">2022 - 2023</span>
+                    <p>Desarrollo de aplicaciones web con Javascript, Node.js, React.js</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                </div>
+
+                <div class="item der">
+                    <h4>Front Developer</h4>
+                    <span class="casa">Municipio de Deleg</span>
+                    <span class="fecha">2022 - 2023</span>
+                    <p>Desarrollo de aplicación web para la venta de artesanias del cantón</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                </div>
+
+                
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    
+                    <img src="img/cotizador-cripto.png" alt="">
+                    <div class="overlay">
+                        <a href="https://cotizador-cripto1.netlify.app/ " target="_blank">
+                        <h3>Cotizador de Criptomonedas</h3></a>
+                        
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/store.png" alt="">
+                    <div class="overlay">
+                        <a href="https://storedm.netlify.app/ " target="_blank">
+                        <h3>Store</h3></a>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/gasto.png" alt="">
+                    <div class="overlay">
+                        <a href="https://administracion-costo.netlify.app/ " target="_blank">
+                        <h3>Administrador de Gastos</h3></a>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/veterinaria.png" alt="">
+                    <div class="overlay">
+                        <a href="https://registro-veterinaria1.netlify.app/ " target="_blank">
+                        <h3>Administrador de Veterinaria</h3></a>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/cafe.png" alt="">
+                    <div class="overlay">
+                        <a href="https://blog-cafe5.netlify.app/ " target="_blank">
+                        <h3>Blog Cafe</h3></a>
+                        <p></p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--formulario-->
+                <div class="col">
+                 <input type="text" placeholder="Tu Nombre">
+                 <input type="text" placeholder="Numero telefonico">
+                 <input type="text" placeholder="Direccion de Correo">
+                 <input type="text" placeholder="Tema">
+                 <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                 <button>
+                    Enviar Mensaje<i class="fa-sharp fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                 </button>
+                </div>
+
+                <!--mapa-->
+                <div class="col">
+                    <img src="img/software-developer-gc9c6d20bb_1280.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telf: +593989511411
+
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: murillodiego011@gmail.com
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
